@@ -1,12 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Button, { ButtonType, ButtonSize } from './components/Button/button'
 
 function App() {
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <Button className="custom"> Hello </Button>
+        <Button disabled>Hello</Button>
+        <Button btnType={ButtonType.Danger} size={ButtonSize.Large}>button primary</Button>
+        <Button btnType={ButtonType.Primary} size={ButtonSize.Large}>button primary</Button>
+        <Button btnType={ButtonType.Link} href="https://www.baidu.com" disabled>百度</Button>
+        <Button btnType={ButtonType.Link} href="http://www.baidu.com" target="_blank">百度</Button>
+        <a href="http://www.baidu.com" target="_blank">baidu.com.</a>
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
@@ -20,7 +26,7 @@ function App() {
         </a>
       </header>
     </div>
-  );
+  ); 
 }
 
 export default App;

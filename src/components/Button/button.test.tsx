@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
 import Button, { ButtonProps, ButtonType, ButtonSize } from './button';
-import { exec } from 'child_process';
+
 const defaultProps = {
     onClick: jest.fn()
 }
@@ -11,7 +11,7 @@ const testProps: ButtonProps = {
     size: ButtonSize.Large,
     className: 'klass'
 }
-
+ 
 const disabledProps: ButtonProps = {
     disabled: true,
     onClick: jest.fn()

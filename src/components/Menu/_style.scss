@@ -22,6 +22,23 @@
             border-bottom: $menu-item-active-border-width;
         }
     }
+    .submenu-item {
+        position: relative;
+    }
+    .biubiu-submenu {
+        list-style: none;
+        padding-left: 0;
+        white-space: nowrap;
+        .menu-item {
+            padding: $menu-item-padding-y $menu-item-padding-x;
+            cursor: pointer;
+            transition: $menu-transition;
+            color: $body-color;
+            &.is-active, &:hover {
+                
+            }
+        }
+    }
 }
 .menu-vertical {
     flex-direction: column;

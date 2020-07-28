@@ -43,7 +43,7 @@ const Menu: React.FC<MenuProps> = (props) => {
             // 类型断言转成functionComponent实例获得displayname
             const childElement = child as FunctionComponentElement<MenuItemProps>
             const { displayName } = childElement.type
-            if(displayName === 'MenuItem') {
+            if(displayName === 'MenuItem' || displayName === 'SubMenu') {
                 return React.cloneElement(childElement, { index })
             } else {
                 console.error("warning: Menu has a child which is not a MenuItem component")

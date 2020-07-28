@@ -16,6 +16,7 @@ const SubMenu: React.FC<SubMenuProps> = ({index, title, children, className}) =>
     })
     const renderChildren =() => {
         const childrenComponent = React.Children.map(children,(child, i) => {
+            // 类型断言
             const childElement = child as FunctionComponentElement<MenuItemProps>
             if(childElement.type.displayName === 'MenuItem') {
                 return childElement

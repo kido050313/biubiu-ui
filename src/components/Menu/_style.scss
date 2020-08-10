@@ -50,7 +50,7 @@
         }
     }
     .biubiu-submenu {
-        // display: none;
+        display: none;
         list-style:none;
         padding-left: 0;
         white-space: nowrap;
@@ -64,6 +64,9 @@
                 color: $menu-item-active-color !important;
             }
         }
+    }
+    .biubiu-submenu.menu-opened {
+      display: block;
     }
 }
 .menu-horizontal {

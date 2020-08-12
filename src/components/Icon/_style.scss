@@ -1,0 +1,6 @@
+// 循环添加变量 sass @each
+@each $key, $val in $theme-colors {
+    .icon-#{$key} {
+        color: $val;
+    }
+}

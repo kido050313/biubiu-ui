@@ -12,7 +12,7 @@
   @include button-size( $btn-padding-y,  $btn-padding-x,  $btn-font-size,  $border-radius);
   box-shadow: $btn-box-shadow;
   cursor: pointer;
-  transition: $btn-transition;
+  transition: $btn-transition; // 与Transition冲突
   &.disabled,
   &[disabled] {
     cursor: not-allowed;
